@@ -26,6 +26,10 @@ function App() {
           path: '/blog',
           element: <Blog></Blog>
         },
+        {
+          path: '*',
+          element: <h1 className='page-error-msg text-indigo-900'>404&nbsp;<span className='text-indigo-500'>|</span>&nbsp;Page Not Found.</h1>
+        }
       ]
     }
   ])
