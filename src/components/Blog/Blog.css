@@ -1,0 +1,12 @@
+.blog-header{
+    font-family: cursive;
+}
+.blogs{
+    display: flex;
+    justify-content: center;
+}
+.blog{
+    border: 1.5px solid indigo;
+    border-radius: 8px;
+    width: 70%;
+}

@@ -8,7 +8,7 @@ const NavBar = () => {
     return (
         <nav className='bg-indigo-200 py-4 px-8 md:flex items-center justify-between'>
             <div className='flex justify-between'>
-                <h1 className='text-4xl font-bold'>Alter Quiz</h1>
+                <h1 className='text-4xl font-semibold'>Alter Quiz</h1>
                 <div onClick={() => setOpen(!open)} className="h-8 w-8 md:hidden">
                     {
 
