@@ -19,6 +19,13 @@ const Blog = () => {
                         The React Context API is a way for a React app to effectively produce global variables that can be easily passed around. This is the alternative to "prop drilling" or moving props from grandparent to parent to child, and so on. Many times we need to send props from a component to another by a huge drill. In this regard context api makes the work easier, quicker and cleaner.
                     </p>
                 </div>
+
+                <div className="blog bg-indigo-50">
+                    <h3 className='py-2 px-4 text-3xl font-semibold'>Q3. What is "useRef"?</h3>
+                    <p className='py-1 px-7 text-xl'>
+                        useRef is a hook of ReactJS. The useRef Hook allows us to persist values between renders. It can be used to store a mutable value that does not cause a re-render when updated. It can also be used to access a DOM element directly.
+                    </p>
+                </div>
             </div>
         </section>
     );

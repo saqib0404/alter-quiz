@@ -20,7 +20,7 @@ const NavBar = () => {
             <div className={`links bg-indigo-200 w-full md:w-auto flex text-center flex-col md:flex-row absolute md:static duration-500 ease-in ${open ? 'top-15 left-0' : 'top-[-200px]'}`}>
                 <NavLink end className={({ isActive }) => isActive ? 'active' : undefined} to='/'>Home</NavLink>
                 <NavLink to='/statistics'>Statistics</NavLink>
-                <NavLink to='blog'>Blog</NavLink>
+                <NavLink to='blog'>Blogs</NavLink>
                 <NavLink to='about'>About</NavLink>
             </div>
 
