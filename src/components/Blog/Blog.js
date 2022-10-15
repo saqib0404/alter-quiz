@@ -12,6 +12,13 @@ const Blog = () => {
                         React Router is mainly used for developing Single Page Web Applications (SPA).React Router is used to define multiple routes in the application. When a user types a specific URL into the browser, and if this URL path matches any 'route' inside the router file, the user will be redirected to that particular route. In this case the whole page is not reloaded which makes the user experience better.
                     </p>
                 </div>
+
+                <div className="blog bg-indigo-50">
+                    <h3 className='py-2 px-4 text-3xl font-semibold'>Q2. How Does Context Api Work?</h3>
+                    <p className='py-1 px-7 text-xl'>
+                        The React Context API is a way for a React app to effectively produce global variables that can be easily passed around. This is the alternative to "prop drilling" or moving props from grandparent to parent to child, and so on. Many times we need to send props from a component to another by a huge drill. In this regard context api makes the work easier, quicker and cleaner.
+                    </p>
+                </div>
             </div>
         </section>
     );
