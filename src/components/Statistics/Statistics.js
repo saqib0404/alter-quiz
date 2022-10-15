@@ -9,7 +9,7 @@ const Statistics = () => {
     return (
         <div>
             <h1 className='statistics-header text-5xl text-center my-10 text-indigo-700'>Statistics</h1>
-            <div style={{width:"100%", height:"400px", padding:"20px"}}>
+            <div style={{width:"100%", height:"400px", padding:"20px", paddingTop:"40px"}}>
                 <ResponsiveContainer className='bg-indigo-100' width="100%" height="100%">
                     {
                         quizes && <LineChart

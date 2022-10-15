@@ -5,7 +5,7 @@ const Blog = () => {
     return (
         <section className='my-10'>
             <h1 className='blog-header text-5xl text-center my-10 text-indigo-700'>Blogs</h1>
-            <div className="blogs">
+            <div className="blogs pt-5">
                 <div className="blog bg-indigo-50">
                     <h3 className='py-2 px-4 text-3xl font-semibold text-indigo-900'>Q1. What is the purpose of react router?</h3>
                     <p className='py-1 px-7 text-xl'>

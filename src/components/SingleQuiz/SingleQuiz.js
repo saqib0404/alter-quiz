@@ -10,7 +10,7 @@ const SingleQuiz = () => {
     return (
         <div>
             <h2 className='blog-header text-5xl text-center my-10 text-indigo-900'>Quiz for: {name}</h2>
-            <div className='questions'>
+            <div className='questions pt-5'>
                 {
                     questions.map((perQuestion,idx) => <PerQuestion
                     key={perQuestion.id}

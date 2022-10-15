@@ -1,13 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Option from '../Option/Option';
 import './PerQuestion.css';
 import 'react-toastify/dist/ReactToastify.css';
 import { toast } from 'react-toastify';
 import { ToastContainer } from 'react-toastify';
-// import { Toast } from 'react-toastify/dist/components';
+import { EyeIcon, EyeSlashIcon } from '@heroicons/react/24/solid'
 
 const PerQuestion = ({ perQuestion, index }) => {
-    console.log(perQuestion);
+    // console.log(perQuestion);
+    const [shown, setShown] = useState(false)
     const { question, options, correctAnswer, id } = perQuestion;
     const correct = () => toast.success('Correct Answer', {
         position: "top-center",
@@ -40,9 +41,14 @@ const PerQuestion = ({ perQuestion, index }) => {
 
     return (
 
-        <div className='question w-3/4 bg-indigo-100'>
+        <div className='question w-3/4 bg-indigo-100 relative '>
             <ToastContainer />
             <h3 className='text-3xl text-indigo-800'>Q{index + 1}. {question}</h3>
+            <div onClick={() => setShown(!shown)} className="h-6 w-6 text-indigo-700 absolute bottom-2 right-2">
+                {
+                    shown ? <EyeSlashIcon /> : <EyeIcon />
+                }
+            </div>
             <div className="options grid md:grid-cols-2">
 
                 {
@@ -55,6 +61,8 @@ const PerQuestion = ({ perQuestion, index }) => {
                     ></Option>)
                 }
             </div>
+            {shown ? "Correct Answer: " + correctAnswer : undefined}
+
         </div>
     );
 };
