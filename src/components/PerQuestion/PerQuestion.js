@@ -3,6 +3,7 @@ import Option from '../Option/Option';
 import './PerQuestion.css';
 import 'react-toastify/dist/ReactToastify.css';
 import { toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 // import { Toast } from 'react-toastify/dist/components';
 
 const PerQuestion = ({ perQuestion, index }) => {
@@ -16,7 +17,7 @@ const PerQuestion = ({ perQuestion, index }) => {
         pauseOnHover: true,
         draggable: true,
         progress: undefined,
-        theme: "light",
+        theme: "dark",
     });
     const wrong = () => toast.warn('Wrong!!!', {
         position: "top-center",
@@ -26,7 +27,7 @@ const PerQuestion = ({ perQuestion, index }) => {
         pauseOnHover: true,
         draggable: true,
         progress: undefined,
-        theme: "light",
+        theme: "dark",
     });
     const answerMatcher = (option) => {
         console.log(option);
@@ -40,12 +41,14 @@ const PerQuestion = ({ perQuestion, index }) => {
     return (
 
         <div className='question w-3/4 bg-indigo-100'>
+            <ToastContainer />
             <h3 className='text-3xl text-indigo-800'>Q{index + 1}. {question}</h3>
             <div className="options grid md:grid-cols-2">
 
                 {
                     options.map((option, idx) => <Option
                         key={idx}
+                        idx={index}
                         index={idx}
                         option={option}
                         answerMatcher={answerMatcher}

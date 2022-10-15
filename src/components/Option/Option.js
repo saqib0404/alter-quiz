@@ -1,28 +1,16 @@
 import React from 'react';
 import './Option.css';
-import { ToastContainer } from 'react-toastify';
 
-const Option = ({ option, index, answerMatcher }) => {
-    // console.log(index);
+const Option = ({ option, index, answerMatcher, idx }) => {
+    console.log(option);
     const forRadio = option.slice(0, 5);
     // console.log(index + forRadio);
     return (
-        <div onClick={() => answerMatcher(option)} className='text-xl py-2 px-4'>
+        <div className='text-xl py-2 px-4'>
             {/* {index + 1}.  */}
-            <ToastContainer
-                position="top-center"
-                autoClose={1000}
-                hideProgressBar
-                newestOnTop={false}
-                closeOnClick
-                rtl={false}
-                pauseOnFocusLoss
-                draggable
-                pauseOnHover
-                theme="light"
-            />
 
-            <input type="radio" id={index + forRadio} name="fav_language" value="HTML" /> &nbsp;
+
+            <input onClick={() => answerMatcher(option)} type="radio" id={index + forRadio} name={idx} /> &nbsp;
             <label htmlFor={index + forRadio}>{option}</label><br></br>
         </div>
 
