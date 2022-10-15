@@ -1,8 +1,13 @@
+.links{
+    transition:  2s;
+    transition-timing-function: ease-in;
+}
 .links a{
     font-size: 1.2rem;
     margin-right: 15px;
     padding: 8px 12px;
+    
 }
 .active{
-    color: rgb(173, 66, 250);
+    color: #a5b4fc;
 }

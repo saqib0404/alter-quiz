@@ -1,0 +1,9 @@
+.quiz-header {
+    font-family: cursive;
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
