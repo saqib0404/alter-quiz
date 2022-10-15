@@ -3,3 +3,6 @@
     margin-right: 15px;
     padding: 8px 12px;
 }
+.active{
+    color: rgb(173, 66, 250);
+}
