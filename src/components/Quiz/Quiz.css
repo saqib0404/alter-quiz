@@ -1,0 +1,16 @@
+.quiz{
+    border: 1px solid indigo;
+    border-radius: 8px;
+    padding: 8px;
+}
+.quiz-img img{
+    background-color: #312e81;
+    border-radius: 8px;
+    width: 100%;
+}
+@media only screen and (max-width: 600px) {
+    .quiz{
+        display: flex;
+        align-items: center;
+    }
+}
